@@ -59,5 +59,5 @@ console.log("Inhalt: " + test); // Ausgabe
 
 // Konstante
 const test2 = "Hi!"; // Deklaration + Wertzuweisung gemeinsam !
-// test2 = "hello"; // Laufzeit-Fehler !! 
+test2 = "hello"; // Laufzeit-Fehler !! 
 console.log("Inhalt: " + test2); // Ausgabe 
