@@ -10,3 +10,11 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 */
 
 const prompt = require('prompt-sync')({sigint: true}); 
+
+let firstNumber = prompt("Ihre erste Zahl: ");
+let secondNumber = prompt("Ihre zweite Zahl: ");
+
+firstnumber = parseFloat(firstNumber);
+secondnumber = parseFloat(secondNumber);
+let summe = firstnumber + secondnumber;
+console.log("Die Summe der Zahlen ist: ", firstNumber + secondNumber);
