@@ -29,9 +29,10 @@ console.log("------------------"); */
 // Türsteher-Politik (Doors 10 p.m.)
 
 
-//if(true)
+//if(true)                  // Wahrheitswert
 //if(false)
-if(isJohnOlder)
+//if(ageJohn > ageMark)     // direkter Test
+if(isJohnOlder)             // Verweis
 {
     console.log("John ist älter.");
 }
@@ -39,3 +40,4 @@ else
 {
     console.log("John ist nicht älter.");
 }
+
