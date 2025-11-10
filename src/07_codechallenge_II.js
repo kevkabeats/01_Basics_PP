@@ -17,11 +17,12 @@ Alter 13-17 // Cola
 /* Getränke-Challenge */
 
 
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({sigint: true}); // Zum Eingeben von Prompts
 
-let userName = prompt("Name?: ");
-let userAge = parseInt(prompt("Alter?: "));
+let userName = prompt("Name?: "); // Eingabe des Namens
+let userAge = parseInt(prompt("Alter?: ")); // Eingabe des Alters und Umwandlung in eine Nichtkommazahl
 
+// Altersabfrage und Ausgabe des entsprechenden Getränks
 if (userAge >=0 && userAge <=5)
 {
     console.log(userName + " trinkt Milch.");
@@ -37,7 +38,12 @@ else if (userAge >=13 && userAge <=17)
     console.log(userName + " trinkt Cola.");
 }
 
-else
+else if (userAge >=18)
 {
     console.log(userName + " trinkt Wein.");
+}
+// Bei ungültiger Eingabe
+else
+{
+    console.log("Ungültige Eingabe.");
 }
