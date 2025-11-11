@@ -89,8 +89,7 @@ function ausgabeNamenSRP(firstName, familyName)
 /***** Funktionen 03b *****/
 
 // 1. Verantwortlichkeit: String composing
-
-const prompt = require('prompt-sync')({sigint: true});
+/* const prompt = require('prompt-sync')({sigint: true});
 // output(getString("Bruno","Stonz"));
 output(getString(prompt("Vorname: "),prompt("Name: ")));
 
@@ -105,7 +104,8 @@ function getString(firstName, familyName)
 /* output("hi");
 output(2);
 output(true); */
-function output(outputSTR) // Wrapper
+
+/* function output(outputSTR) // Wrapper
 {
     console.log(outputSTR);
-}
+} */
