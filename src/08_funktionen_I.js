@@ -72,7 +72,7 @@ function ausgabeNamen3(firstName, familyName) // Parameter
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Bruno","Stonz")
+/* ausgabeNamenSRP("Bruno","Stonz")
 
 function ausgabeNamenSRP(firstName, familyName)
 {
@@ -81,5 +81,31 @@ function ausgabeNamenSRP(firstName, familyName)
     let outputSTR = "Hallo" + GAP + firstName + GAP + familyName + "!";
     
     // 2. Verantwortlichkeit: Ausgabe
+    console.log(outputSTR);
+} */
+
+
+
+/***** Funktionen 03b *****/
+
+// 1. Verantwortlichkeit: String composing
+
+const prompt = require('prompt-sync')({sigint: true});
+// output(getString("Bruno","Stonz"));
+output(getString(prompt("Vorname: "),prompt("Name: ")));
+
+function getString(firstName, familyName)
+{   
+    const GAP = " ";
+    let outputSTR = "Hallo," + GAP + firstName + GAP + familyName + "!";
+    return outputSTR; // Fkt. OUTPUT sendet Daten zum call
+}
+
+// 2. Verantwortlichkeit: Ausgabe
+/* output("hi");
+output(2);
+output(true); */
+function output(outputSTR) // Wrapper
+{
     console.log(outputSTR);
 }
