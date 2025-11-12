@@ -84,7 +84,7 @@ function orderDrink(choice) {
 
 // Getränk ?
 function hasChoosenDrink() {
-  return (prompt("y/n?: ") == "y");
+  return (prompt("y/n?: ").toLowerCase() == "y");
 }
 
 // Auswahl
