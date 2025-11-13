@@ -79,7 +79,7 @@ function getNumber(figure) {
 
     // wenn Eingabe keine Zahl --> nochmal
     if (isNaN(num)){
-       getNumber(figure) 
+       return getNumber(figure) // Funktion wird erneut aufgerufen
     }
     
     return num;
