@@ -32,8 +32,16 @@
 // }
 
 // Inkrement (var. Schrittweite)
-for (let i = 10; i <= 100; i += 10) {
-   output("index :" + i);   
+// for (let i = 10; i <= 100; i += 10) {
+//    output("index :" + i);   
+// }
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+for (let i = 0; i < arr.length; i++) 
+{
+   output(i); // interner Index 
+   output(arr[i]);  // Mapping  intern --> extern
 }
 
 
