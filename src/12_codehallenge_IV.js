@@ -18,8 +18,16 @@ output(getSentence(["Bist","du","Max"],"Q"));
 output(getSentence(["Ich","bin"],"E"));
 output(getSentence(["Ich","hätt","gern","die","Platt","von","dene","zwei","diwodaso","Spass","mache,","habbe","Sie","die"],"Q"));
 
-function getSentence(arr,op) {
-   // ???
+function getSentence(arr,op) 
+{
+    const GAP = " ";
+    const PUNCT = ".";
+    const EXCL = "!";
+    const QUEST = "?";
+
+if (op === "S") return arr.join(GAP) + PUNCT; 
+if (op === "E") return arr.join(GAP) + EXCL;
+if (op === "Q") return arr.join(GAP) + QUEST
 }
 
 
