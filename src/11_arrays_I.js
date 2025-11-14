@@ -133,7 +133,7 @@ function getSentenceArr(arr) {
 /*** 01b. Funktionalität mit Array 2  */
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananananderdereihung ...
-output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
 
     const GAP = " ";
