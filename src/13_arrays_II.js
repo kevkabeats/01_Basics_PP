@@ -1,5 +1,32 @@
 
 
+/*********   Theorie **********/
+
+// push() / pop()
+// push --> Daten rein ... (+)
+
+/* let arr = [];
+
+output(arr);
+arr.push("Ich");
+output(arr);
+arr.push("bin");
+output(arr);
+arr.push("Max");
+output(arr);
+
+// pop() --> Daten raus ... (-)
+output(arr.pop());
+output(arr);
+output(arr.pop());
+output(arr);
+output(arr.pop());
+output(arr); */
+
+
+
+/*********  Praxis **********/
+
 /*
 Aufgabe:
 
@@ -35,11 +62,12 @@ const TAGS = [  "html","head","head","body",
 
 const NEW_LINE_STR = "\n";
 const TAB_STR = "\t";
+const ERR_STR = "Error!";
 
 let stack = [];
 
 // Modul: HTML-Synthese | Test
-output(getHTML());
+// output(getHTML());
 function getHTML() {
 
     let htmlStr = "";
@@ -90,9 +118,9 @@ function isOpenElement(tag) {
 }
 
 // Modul: Zusammenbau der Elements: <tagStr> --> Tests:
-// output(getElement(tags[1],"open"));
-// output(getElement(tags[1],"close"));
-// output(getElement(tags[1]));
+/* output(getElement(TAGS[1],"open"));
+output(getElement(TAGS[1],"close"));
+output(getElement(TAGS[1])); */
 function getElement(tag,op) {
     switch (op) {
         case "open":
